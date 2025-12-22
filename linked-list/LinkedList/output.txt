@@ -1,0 +1,14 @@
+The LL size is : 1
+40 50 
+head: 40 tail: 50
+40 50 25 
+head: 40 tail: 25
+40 50 25 30 
+head: 40 tail: 30
+40 50 75 25 30 
+head: 40 tail: 30
+Segmentation Error
+40 50 75 25 30 
+head: 40 tail: 30
+LL is empty!!!
+
