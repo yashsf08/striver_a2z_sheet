@@ -7,14 +7,12 @@
 
 using namespace std;
 
-bool binary_search(const vector<int> &arr, int element) {
-
-  int start = 0;
-  int end = arr.size() - 1;
-  int mid = start + (end - start) / 2;
+bool binary_sarch(const vector<int> &arr, int element) {
+  start = 0;
+  end = arr.size() - 1;
+  mid = start + (end - start) /2;
 
   while (start <= end) {
-
     if (arr[mid] == element) {
       return true;
     } else if (arr[mid] < element) {
@@ -22,9 +20,9 @@ bool binary_search(const vector<int> &arr, int element) {
     } else {
       end = mid - 1;
     }
-
-    mid = (start + end) / 2;
+    mid = start + (end - start) /2;
   }
+
   return false;
 }
 
